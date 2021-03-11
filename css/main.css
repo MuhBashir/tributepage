@@ -1,90 +1,110 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    background-color: ghostwhite;
-    font-family: monospace,courier,Arial, Helvetica, sans-serif;
-    line-height: 1.4em;
-    
+@import url("https://fonts.googleapis.com/css2?family=Piazzolla:wght@100&display=swap");
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-#title{
-    text-align: center;
-    background-color: ivory;
-    padding: 50px;
-    font-size: 2.5em;
-    font-style: oblique;
-
+body {
+  font-family: "Piazzolla", serif;
+  background: cyan;
+  line-height: 1.5;
 }
 
-#main{
-    
-    background-color: honeydew;
-    
-
+#main {
+  margin: 3rem 1rem 0 1rem;
+  padding: 1.8rem;
+  background: darkseagreen;
+  border-radius: 0.3rem;
 }
 
-#img-div{
-    text-align: center;
-    padding: 20px;
-    margin: 20px;
-
-}
-a{
-    text-decoration: none;
-    display: inline-block;
-    text-align: center;
-    outline: none;
-}
-a:visited, a:focus, a:link{
-    background-color: rgb(160, 123, 45);
-}
-a:hover{
-    background-color: skyblue;
+#title,
+.underline,
+#title + p,
+#img-caption,
+h2 {
+  text-align: center;
 }
 
-#img-caption{
-    padding: 20px;
-    margin: 10px;
+h2 {
+  font-size: 2rem;
 }
 
-#tribute-info{
-    font-size: 1.0em;
-}
-#image{
-    display: block;
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-
+#title {
+  font-size: 2.5rem;
+  font-style: italic;
+  margin-bottom: 2rem;
 }
 
-h2{
-    text-align: center;
-    padding: 30px;
+#title + p {
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
 }
-h1+p{
-    text-align: center;
-    padding: 20px;
 
+.underline {
+  height: 10px;
+  background: #000;
+  width: 6rem;
+  margin: 0.5rem auto 2rem auto;
+  border-radius: 0.5rem;
 }
-p{
-    padding: 30px;
-}
-h2+div {
-    margin: auto;
-    width: 50%;
-    padding: 10px;
-}
-#tribute{
-    font-style: italic;
-}
-@media screen and (max-width: 1200px){
-    #main{
-        margin: auto;
-        width: 75;
-        padding: 10px;
-    }
 
+#img-div {
+  margin: 1.5rem;
+  background: #00ffff;
+  border-radius: 0.5rem;
+  padding: 2rem;
+}
+
+#image {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  padding-bottom: 1rem;
+}
+
+#img-caption {
+  font-size: 1.5rem;
+}
+
+#tribute-info {
+  width: 80%;
+  margin: 0 auto;
+}
+
+div > ul {
+  font-size: 1.3rem;
+  line-height: 1.7;
+}
+
+p > strong {
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  #title {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  p > strong {
+    font-size: 1.5rem;
+  }
+
+  div > ul {
+    font-size: 1.5rem;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  ul {
+    font-size: 2rem;
+  }
 }
